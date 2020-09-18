@@ -1,0 +1,440 @@
+/*=================================
+Author: Md Saifur Rahman
+Updated: 17 September, 2020
+Notes: Hand Coded by Fiverr.com/saifurpro
+===================================*/
+
+/*------Start Base CSS------*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Assistant', sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: 600;
+  color: #000;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  border: none;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+body[dir="rtl"] {
+  direction: rtl;
+  text-align: right;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+}
+
+a:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+a:focus,
+input:focus,
+textarea:focus,
+button:focus {
+  outline: 0 solid;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+p {
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.float_left {
+  float: left;
+}
+
+.float_right {
+  float: right;
+}
+
+.fix:before,
+.fix:after {
+  content: '';
+  display: table;
+}
+
+.fix:after {
+  clear: both;
+}
+
+/*------End Base CSS------*/
+
+/* Start Header CSS */
+.header {
+  background: rgb(44, 74, 160);
+  background: -moz-linear-gradient(45deg, rgba(44, 74, 160, 1) 0%, rgba(26, 251, 253, 1) 100%);
+  background: -webkit-linear-gradient(45deg, rgba(44, 74, 160, 1) 0%, rgba(26, 251, 253, 1) 100%);
+  background: linear-gradient(45deg, rgba(44, 74, 160, 1) 0%, rgba(26, 251, 253, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2c4aa0', endColorstr='#1afbfd', GradientType=1);
+  padding: 15px 0;
+}
+
+.main-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu li {
+  display: inline-block;
+}
+
+.main-menu li a {
+  display: block;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 5px 10px;
+  position: relative;
+}
+
+.main-menu li a:hover {
+  opacity: .9;
+}
+
+.main-menu li a:after {
+  position: absolute;
+  content: "";
+  right: 0px;
+  top: 15px;
+  width: 1px;
+  height: 20px;
+  background: #fff;
+}
+
+.main-menu li:first-child a:after {
+  display: none;
+}
+
+.header-right {
+  text-align: left;
+}
+
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  max-width: 142px;
+}
+
+.header-right a {
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 600;
+  padding: 5px 10px;
+  position: relative;
+}
+
+.header-right a:hover {
+  opacity: .9;
+}
+
+.header-right a::after {
+  position: absolute;
+  content: "";
+  right: 0;
+  top: 15px;
+  width: 1px;
+  height: 20px;
+  background: #fff;
+}
+
+.header-right a:first-child::after {
+  display: none;
+}
+
+/* End Header CSS */
+
+/* Start Category List CSS */
+.single-category-item {
+  width: 12%;
+  padding: 0 2%;
+}
+
+.single-category-item h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+}
+
+.category-item-wrap {
+  padding: 30px 0 15px 0;
+}
+
+/* End Category List CSS */
+
+/* Start Featured post CSS */
+.featured-bg-1 {
+  background-image: url("assets/img/featured-bg.jpg");
+}
+
+.featured-post-area {
+  padding: 15px 0;
+}
+
+.single-featured-post {
+  position: relative;
+  z-index: 1;
+  background-color: #333;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 150px;
+}
+
+.featured-meta {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background: #f7f7f7;
+  padding: 2px 5px;
+  font-size: 18px;
+  color: #000;
+  font-weight: 600;
+}
+
+.featured-meta a {
+  display: inline-block;
+  color: #000;
+}
+
+.featured-meta p {
+  margin: 0;
+}
+
+.featured-post-small .single-featured-post {
+  background: transparent;
+  padding: 15px 0;
+  width: calc(20% - 12px);
+  margin-right: 15px;
+}
+
+.featured-post-small .featured-title {
+  position: relative;
+  background: transparent;
+}
+
+.featured-title {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.featured-title h3 {
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  padding: 5px;
+  margin: 0;
+}
+
+.featured-title h3 a {
+  color: #fff;
+}
+
+.featured-post-small .featured-title h3 {
+  color: #000;
+}
+
+.featured-post-small .single-featured-post img {
+  width: 100%;
+  height: 100px;
+  object-fit: cover;
+}
+
+.featured-post-small .single-featured-post:last-child {
+  margin-right: 0;
+}
+
+/* End Featured post CSS */
+
+/* Cat Post Section 1 Start */
+.cat-post-one {
+  padding: 15px 0;
+}
+
+.cat-post-one-left-title h4 {
+  background: #00c3ff;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 2px 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cat-post-one-left-title {
+  border-bottom: 3px solid #00c3ff;
+  margin-bottom: 10px;
+}
+
+.cat-post-one-left-title.color2 {
+  border-color: #ff0000;
+}
+
+.cat-post-one-left-title.color2 h4 {
+  background-color: #ff0000;
+  margin-top: 15px;
+}
+
+.single-cat-post-one-left a {
+  color: #000;
+}
+
+.single-cat-post-one-left h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.single-cat-post-one-left {
+  position: relative;
+  z-index: 1;
+  padding: 20px 0;
+  padding-right: 110px;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 5px;
+}
+
+.single-cat-post-one-left img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.cat-post-one-right-title h4 {
+  background: #000;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 2px 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cat-post-one-right-title {
+  border-bottom: 3px solid #000;
+  margin-bottom: 10px;
+}
+
+.single-cat-post-one-right tr {
+  background: #e3e3e3;
+}
+
+.single-cat-post-one-right table {
+  width: 100%;
+}
+
+.single-cat-post-one-right td {
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid #fff;
+  padding: 5px 10px;
+}
+
+.single-cat-post-one-right td span {
+  display: block;
+  font-size: 14px;
+}
+
+.single-cat-post-one-right tr:nth-child(2n+2) {
+  background-color: #f1f1f1;
+}
+
+/* Cat Post Section 1 End */
+
+/* Cat Post Section 2 Start */
+.cat-post-two {
+  padding: 15px 0;
+}
+
+.single-cat-post-two-left a {
+  color: #000;
+}
+
+.single-cat-post-two-left h4 {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.single-cat-post-two-left {
+  position: relative;
+  z-index: 1;
+  padding: 20px 0;
+  padding-right: 110px;
+  border-bottom: 2px solid #ddd;
+  margin-bottom: 5px;
+}
+
+.single-cat-post-two-left img {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+}
+
+.cat-post-two-left-title h4 {
+  background: #8a00ff;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 2px 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cat-post-two-left-title {
+  border-bottom: 3px solid #8a00ff;
+  margin-bottom: 10px;
+}
+
+.cat-post-two-right-title h4 {
+  background: #ff00c0;
+  color: #fff;
+  display: inline-block;
+  margin-bottom: 0;
+  padding: 2px 5px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.cat-post-two-right-title {
+  border-bottom: 3px solid #ff00c0;
+  margin-bottom: 10px;
+}
+
+/* Cat Post Section 2 End */
