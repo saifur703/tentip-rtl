@@ -88,6 +88,7 @@
 	.single-category-item h4 {
 		display: inline-block;
 		padding-right: 10px;
+		font-size: 16px;
 	}
 
 	.single-featured-post {
