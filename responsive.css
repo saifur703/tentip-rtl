@@ -60,6 +60,34 @@
     opacity: 1;
     visibility: visible;
     display: block;
+    background: #f1f1f1;
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    right: 0;
+  }
+
+  body.active {
+    width: 100%;
+    margin: auto 50%;
+    overflow-x: hidden;
+  }
+
+  body.s_active {
+    margin: 0 50%;
+    width: 100%;
+    direction: initial;
+  }
+
+  a.search.s_active {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    background: #f1f1f1;
+    color: #000;
   }
 }
 
@@ -100,6 +128,7 @@
     width: 70px;
     height: 60px;
   }
+
   .single-footer-top-post {
     width: 45%;
   }
@@ -117,6 +146,6 @@
 -----------------------------------------------    */
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-  only screen and (min-device-pixel-ratio: 2) {
+only screen and (min-device-pixel-ratio: 2) {
   /* css */
 }
